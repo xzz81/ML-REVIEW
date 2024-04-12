@@ -47,3 +47,10 @@ Cluster Height: (its horizontal extension[Y]) shows the Silhouette values of the
 Positive and Negative Values: Observe whether any data points have negative Silhouette values, indicating potential misclassification. If many points have Silhouette values close to or below 0, it might indicate that the clustering configuration needs adjustment.
 
 Anyway, higer is better
+
+# R command 
+cluster <- hclust(dist(data))  
+method = 'complete' by default
+to cut  
+cutree(dendogram, k =3)
+cutree(cluster, h = 150)
